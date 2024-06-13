@@ -1,0 +1,139 @@
+/* fonts section start */
+
+/* fonts section end */
+
+/* body section start */
+
+body {
+  margin: 0;
+  height: 5000px;
+  width: 100%;
+}
+
+/* body section end */
+
+/* root section start */
+
+:root {
+  --background-color1: rgb(100, 0, 0);
+}
+
+/* root section end */
+
+/* video background section start */
+
+.videobg {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Garante que o vídeo fique atrás do conteúdo */
+}
+
+#bg-video {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* video background section end */
+
+/* navbar section start */
+
+.navbar {
+  display: block;
+  position: fixed;
+  align-items: center;
+  padding: 20px;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  z-index: 1;
+}
+
+.logonavbar1 {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar img {
+  height: 70px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  border-radius: 5%;
+}
+
+.container1 {
+  display: flex;
+  list-style-type: none;
+  padding: 15px 0;
+  justify-content: center;
+}
+
+.transparent {
+  background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo com pouca opacidade */
+  opacity: 1; /* Opacidade reduzida */
+}
+
+/* pseudo-selector navbar */
+
+li a:hover {
+  background: #dfaf68;
+  transition: all 0.5s;
+}
+
+/* pseudo-selector navbar */
+
+/* navbar section end */
+
+/* conteudo1 start  */
+
+section {
+  display: flex;
+  height: 1000px;
+}
+
+.container2 {
+  margin-left: 7rem;
+  padding: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.section1text {
+  display: flex;
+}
+
+.bemvindo {
+  font-size: 30px;
+  display: flex;
+  color: white;
+}
+
+.meusite {
+  font-size: 100px;
+  background: linear-gradient(45deg, #dfaf68, #523202, #dfaf68);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* conteudo1 end  */
