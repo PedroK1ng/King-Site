@@ -1,69 +1,133 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <title>Site do Zero</title>
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- fonts section start -->
-
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap");
-    </style>
-
-    <!-- fonts section end -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
-
-  <!-- body section start -->
+  <link rel="stylesheet" href="/style-home.css" />
   <body>
-    <!-- navbar section start -->
-    <header class="navbar">
-      <div class="logonavbar1">
-        <a href="#" class="logonavbar"
-          ><img src="/assets/logos/logoking.png"
-        /></a>
+
+     <!-- navbar section start -->
+     <header class="navbar">
+        <div class="logonavbar1">
+          <a href="#" class="logonavbar"
+            ><img src="/assets/logos/logoking.png"
+          /></a>
+        </div>
+        <div class="container1">
+          <li><a href="#" id="boton-navbar-home">Home</a></li>
+          <li><a href="">Sobre nós</a></li>
+          <li><a href="">Conheça</a></li>
+          <li><a href="">Parceiros</a></li>
+          <li><a href="/html/login.html">Login</a></li>
+        </div>
+      </header>
+      <!-- navbar section end -->
+<section>
+    <div class="teste">  <h1>
+      <span class="bemvindo"> SEJA BEM-VINDO AO</span>
+      <span class="meusite"> MEU SITE</span>
+    </h1> </div>
+    <div class="carousel">
+      <div class="carousel-control-button left">
+        <input type="radio" name="carousel-control-input" />
       </div>
-      <div class="container1">
-        <li><a href="">Home</a></li>
-        <li><a href="">Sobre nós</a></li>
-        <li><a href="">Conheça</a></li>
-        <li><a href="">Parceiros</a></li>
-        <li><a href="">Login</a></li>
+      <div class="carousel-control-button right">
+        <input type="radio" name="carousel-control-input" checked />
       </div>
-    </header>
-    <!-- navbar section end -->
 
-    <!-- video background start -->
-    <section>
-      <div class="videobg">
-        <video autoplay muted loop id="bg-video">
-          <source src="./assets/videos/background2.mp4" type="video/mp4" />
-          Seu navegador não suporta a tag de vídeo.
-        </video>
+      <div class="carousel-rotation-direction">
+        <ul class="carousel-item-wrapper" style="--_num-elements: 11">
+          <li class="carousel-item" style="--_index: 1; --_image-url: ">
+             <video autoplay muted loop autoplay muted class="video" onclick="setAsBackground(this)">
+                <source src="./assets/videos/background11.mp4" type="video/mp4">
+          </li>
+          <li class="carousel-item" style="--_index: 2; --_image-url: ">
+             <video autoplay muted loop class="video" onclick="setAsBackground(this)">
+                <source src="./assets/Videos/background10.mp4" type="video/mp4">
+          </li>
+          <li class="carousel-item" style="--_index: 3; --_image-url: ">
+             <video autoplay muted loop class="video" onclick="setAsBackground(this)">
+                <source src="./assets/Videos/background9.mp4" type="video/mp4">
+          </li>
+          <li class="carousel-item" style="--_index: 4; --_image-url: ">
+             <video autoplay muted loop class="video" onclick="setAsBackground(this)">
+                <source src="./assets/Videos/background8.mp4" type="video/mp4">
+          </li>
+          <li class="carousel-item" style="--_index: 5; --_image-url: ">
+             <video autoplay muted loop class="video" onclick="setAsBackground(this)">
+                <source src="./assets/Videos/background7.mp4" type="video/mp4">
+          </li>
+          <li class="carousel-item" style="--_index: 6; --_image-url: ">
+             <video autoplay muted loop class="video" onclick="setAsBackground(this)">
+                <source src="./assets/Videos/background6.mp4" type="video/mp4">
+          </li>
+          <li class="carousel-item" style="--_index: 7; --_image-url: ">
+             <video autoplay muted loop class="video" onclick="setAsBackground(this)">
+                <source src="./assets/Videos/background5.mp4" type="video/mp4">
+          </li>
+          <li class="carousel-item" style="--_index: 8; --_image-url: ">
+             <video autoplay muted loop class="video" onclick="setAsBackground(this)">
+                <source src="./assets/Videos/background4.mp4" type="video/mp4">
+          </li>
+          <li class="carousel-item" style="--_index: 9; --_image-url: ">
+             <video autoplay muted loop class="video" onclick="setAsBackground(this)">
+                <source src="./assets/Videos/background3.mp4" type="video/mp4">
+          </li>
+          <li class="carousel-item" style="--_index: 10; --_image-url: ">
+             <video autoplay muted loop class="video" onclick="setAsBackground(this)">
+                <source src="./assets/Videos/background2.mp4" type="video/mp4">
+          </li>
+          <li class="carousel-item" style="--_index: 11; --_image-url: ">
+             <video autoplay muted loop class="video" onclick="setAsBackground(this)">
+                <source src="./assets/Videos/background1.mp4" type="video/mp4">
+          </li>
+
+          <li class="carousel-ground"></li>
+        </ul>
+    </div>
       </div>
-      <div class="container2">
-        <h1>
-          <span class="bemvindo"> SEJA BEM-VINDO</span>
-          <span class="meusite"> MEU SITE</span>
-        </h1>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <!-- video background end -->
 
-    <!-- conteudo section start -->
+    <script>
+        function setAsBackground(videoElement) {
+            const videoSrc = videoElement.querySelector('source').src;
+            let fullScreenVideo = document.getElementById('fullScreenVideo');
 
-    <!-- conteudo section end -->
+            if (!fullScreenVideo) {
+                fullScreenVideo = document.createElement('video');
+                fullScreenVideo.id = 'fullScreenVideo';
+                fullScreenVideo.className = 'full-screen-video';
+                fullScreenVideo.autoplay = true;
+                fullScreenVideo.muted = true;
+                fullScreenVideo.loop = true;
+                document.body.appendChild(fullScreenVideo);
+            }
 
-    <!-- javascript section start -->
+            if (fullScreenVideo.src !== videoSrc) {
+                const newVideo = document.createElement('video');
+                newVideo.src = videoSrc;
+                newVideo.autoplay = true;
+                newVideo.muted = true;
+                newVideo.loop = true;
+                newVideo.className = 'full-screen-video hidden';
+                document.body.appendChild(newVideo);
 
-    <script src="script.js"></script>
+                setTimeout(() => {
+                    newVideo.classList.remove('hidden');
+                }, 100); // Delay to trigger the transition
 
-    <!-- javascript section end -->
+                newVideo.addEventListener('transitionend', () => {
+                    document.body.removeChild(fullScreenVideo);
+                    newVideo.id = 'fullScreenVideo';
+                });
+            }
+        }
+    </script>
   </body>
-  <!-- body section end -->
+
+
 </html>
