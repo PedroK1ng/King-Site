@@ -194,3 +194,118 @@ section {
   transition: color 0.5s;
 }
 /* -------------------------------------------------- LOGIN SECTION END -------------------------------------------------- */
+
+/* -------------------------------------------------- CADASTRO SECTION START -------------------------------------------------- */
+
+.section-cadastro {
+  border: 1px solid red;
+}
+
+.container1-cadastro {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.form-cadastro {
+  height: 700px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-cadastro label {
+  display: flex;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  padding: 12px 14px;
+  border: 1px solid #e7e7e7;
+}
+
+.form-cadastro p {
+  width: 100%;
+  display: flex;
+}
+
+.datadenascimento input {
+  display: flex;
+  border: none;
+  color: #8b8989;
+  padding: 10px 110px;
+  text-decoration: none;
+}
+
+.datadenascimento {
+  display: flex;
+  border: 1px solid #e7e7e7;
+  align-items: center;
+  color: #6d6c6c;
+  width: 100%;
+  max-height: 40px;
+}
+.datadenascimento p {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  gap: 20px;
+}
+.gender-cadastro {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border: 1px solid #e7e7e7;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.gender-cadastro label {
+  display: flex;
+  align-items: center;
+  border: none;
+  gap: 90px;
+}
+
+.gender-cadastro select {
+  border: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 110px;
+  color: #8b8989;
+}
+
+.gender-cadastro p {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  margin-left: 15px;
+  color: #7c7d7d;
+}
+
+.buttonformcadastro {
+  width: 100%;
+  padding: 12px 14px;
+  background: linear-gradient(90deg, #dfaf68 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: color 0.5s, background-position 0.5s;
+}
+
+.buttonformcadastro:hover {
+  background-position: left bottom;
+  color: black;
+}
+
+/* -------------------------------------------------- CADASTRO SECTION END -------------------------------------------------- */

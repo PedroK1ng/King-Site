@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <link rel="stylesheet" href="../style.css" />
+
+  <body>
+    <section class="section-cadastro">
+      <div class="container1-cadastro">
+        <form class="form-cadastro">
+          <p>
+            <input
+              type="email"
+              name="Email"
+              placeholder="Email"
+              class="input"
+            />
+          </p>
+          <p>
+            <input
+              type="text"
+              name="usuario"
+              placeholder="Usuario"
+              class="input"
+            />
+          </p>
+          <p>
+            <input
+              type="text"
+              name="nome"
+              placeholder="Nome Completo"
+              class="input"
+            />
+          </p>
+
+          <div class="datadenascimento">
+            <p>
+              Data de Nascimento
+              <input
+                type="date"
+                name="data de nascimento"
+                placeholder="Data De Nascimento"
+              />
+            </p>
+          </div>
+
+          <div class="gender-cadastro">
+            <label for="gender">
+              <p>Gênero</p>
+              <select id="gender" name="gender" required>
+                <option value="">Selecione...</option>
+                <option value="masculino" class="input">Masculino</option>
+                <option value="feminino" class="input">Feminino</option>
+              </select>
+            </label>
+          </div>
+          <p>
+            <input
+              type="text"
+              name="telefone"
+              placeholder="Telefone"
+              class="input"
+            />
+          </p>
+          <p>
+            <input
+              type="password"
+              name="senha"
+              placeholder="Senha"
+              class="input"
+            />
+          </p>
+          <button type="submit" class="buttonformcadastro">CADASTRAR-SE</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
